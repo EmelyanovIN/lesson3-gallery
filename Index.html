@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Художника</title>
+    
+    <!-- 1. Подключаем красивые шрифты Google Fonts (Playfair Display для заголовков) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- 2. Подключаем наш файл стилей -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Навигация (Шапка) -->
+    <nav class="navbar">
+    <div class="container nav-container">
+        <div class="logo">ARTIST NAME</div>
+        <ul class="menu">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <!-- БЛОК 1: Hero (Первый экран) -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="artist-name">Имя Художника</h1>
+            <p class="tagline">Масло, холст и немного магии ✨</p>
+            <a href="#gallery" class="btn">Смотреть работы</a>
+        </div>
+    </header>
+
+    <!-- БЛОК: Обо мне -->
+    <section id="about" class="about">
+    <div class="container">
+        <div class="about-content">
+            <!-- Левая часть: Фото -->
+            <div class="about-photo">
+                <!-- Замени ссылку на свое фото -->
+                <img src="https://picsum.photos/400/400?random=10" alt="Я в мастерской">
+            </div>
+            
+            <!-- Правая часть: Текст -->
+            <div class="about-text">
+                <h2>Обо мне</h2>
+                <p>Привет! Меня зовут [Имя]. Я создаю картины, которые наполняют дом уютом.</p>
+                <p>Мой путь начался 10 лет назад в маленькой мастерской. Я вдохновляюсь природой, тишиной и светом.</p>
+                <p>Каждая моя работа — это застывшее мгновение, которое я хочу разделить с вами.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- БЛОК 2: Галерея (Портфолио) -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Избранные работы</h2>
+            
+            <div class="gallery-grid">
+                <!-- Временные картинки-заглушки (позже заменим на твои) -->
+                <!-- alt - это описание картинки для слепых и поисковиков -->
+                <div class="art-item">
+                    <img src="https://picsum.photos/400/500?random=1" alt="Картина 1">
+                    <p>Название работы №1</p>
+                </div>
+                <div class="art-item">
+                    <img src="https://picsum.photos/400/500?random=2" alt="Картина 2">
+                    <p>Название работы №2</p>
+                </div>
+                <div class="art-item">
+                    <img src="https://picsum.photos/400/500?random=3" alt="Картина 3">
+                    <p>Название работы №3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 3: Контакты (Footer) -->
+    <footer class="footer">
+        <div class="container">
+            <p>Хотите заказать картину?</p>
+            <a href="mailto:email@example.com" class="link">Написать мне</a>
+            <p class="copyright">© 2025 Имя Художника</p>
+        </div>
+    </footer>
+
+</body>
+</html>
