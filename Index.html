@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Vargan | Портфолио</title>
+    
+    <!-- 1. ИКОНКА САЙТА (SVG Логотип) -->
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+
+    <!-- 2. ШРИФТЫ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Manrope:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- 3. СТИЛИ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container header-content">
+            <!-- Логотип текстом -->
+            <a href="#" class="logo">Art <span class="accent">Vargan</span>.</a>
+            
+            <!-- Кнопка меню для телефонов -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Меню -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO (Главный экран) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Искусство момента</h1>
+            <p>Живопись, графика и визуальные эксперименты.</p>
+            <a href="#gallery" class="btn">Смотреть работы</a>
+        </div>
+    </section>
+
+    <!-- ОБО МНЕ -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <!-- ФОТО ХУДОЖНИКА -->
+                <img src="img/me.jpg" alt="Портрет художника" onerror="this.src='https://via.placeholder.com/600x800?text=Загрузи+me.jpg'">
+            </div>
+            <div class="about-text">
+                <h2>Приветствую</h2>
+                <p>Меня зовут Александр. В своих работах я исследую границу между реальностью и сновидением. Каждая картина — это попытка поймать эмоцию и запечатлеть её на холсте.</p>
+                <p>Я использую смешанные техники, чтобы передать глубину и текстуру мира вокруг нас.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span>5+</span> лет практики
+                    </div>
+                    <div class="stat-item">
+                        <span>Авторский</span> стиль
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Избранные работы</h2>
+                <p>Кликните на работу, чтобы рассмотреть детали</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Работа 1 -->
+                <div class="art-card">
+                    <img src="img/art1.jpg" alt="Картина 1" onerror="this.src='https://via.placeholder.com/600?text=art1.jpg'">
+                    <div class="art-info">
+                        <h3>Работа №1</h3>
+                        <p>Холст, масло</p>
+                    </div>
+                </div>
+
+                <!-- Работа 2 -->
+                <div class="art-card">
+                    <img src="img/art2.jpg" alt="Картина 2" onerror="this.src='https://via.placeholder.com/600?text=art2.jpg'">
+                    <div class="art-info">
+                        <h3>Работа №2</h3>
+                        <p>Графика</p>
+                    </div>
+                </div>
+
+                <!-- Работа 3 -->
+                <div class="art-card">
+                    <img src="img/art3.jpg" alt="Картина 3" onerror="this.src='https://via.placeholder.com/600?text=art3.jpg'">
+                    <div class="art-info">
+                        <h3>Работа №3</h3>
+                        <p>Смешанная техника</p>
+                    </div>
+                </div>
+                
+                <!-- Работа 4 -->
+                <div class="art-card">
+                    <img src="img/art4.jpg" alt="Картина 4" onerror="this.src='https://via.placeholder.com/600?text=art4.jpg'">
+                    <div class="art-info">
+                        <h3>Работа №4</h3>
+                        <p>Акрил</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section id="contacts" class="contacts">
+        <div class="container contact-content">
+            <h2>Сотрудничество</h2>
+            <p>Открыт для заказов и предложений.</p>
+            
+            <div class="links">
+                <a href="mailto:email@example.com" class="btn btn-dark">Написать письмо</a>
+                <a href="https://t.me/username" target="_blank" class="social-link">Telegram</a>
+                <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Art Vargan. Все права защищены.</p>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО (ЛАЙТБОКС) -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-img" src="" alt="Просмотр">
+    </div>
+
+    <!-- СКРИПТЫ (Интерактив) -->
+    <script>
+        // 1. Мобильное меню
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('.nav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // Закрываем меню при клике на ссылку
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                nav.classList.remove('active');
+            });
+        });
+
+        // 2. Лайтбокс (Просмотр фото)
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        const closeBtn = document.querySelector('.close-btn');
+        const artImages = document.querySelectorAll('.art-card img');
+
+        artImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        closeBtn.addEventListener('click', () => lightbox.classList.remove('active'));
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) lightbox.classList.remove('active');
+        });
+
+        // 3. Плавная прокрутка
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
